@@ -12,3 +12,23 @@ ul {
   ul li {
     display: inline-block;
   }
+
+  ul img {
+    width: flex;
+    height: flex;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+  }
+
+
+  ul img.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+    z-index: 10; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
