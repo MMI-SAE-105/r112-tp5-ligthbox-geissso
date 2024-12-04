@@ -2,11 +2,13 @@
 * Lightbox
 */
 ul {
-    display: flex;
     list-style: none;
-   flex-wrap: wrap;
-    gap: 10px;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: left; 
   }
 
   ul li {
